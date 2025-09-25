@@ -1,0 +1,95 @@
+#pragma once
+
+// ===== Core Engine & World =====
+#define UWORLD 0x17ADA908
+#define UWORLD2 0x172E28A0
+#define GOBJECTS 0x17AAF628
+#define NUM_ELEMENTS 0x17AAF624
+#define GAME_INSTANCE 0x250
+#define GAME_STATE 0x1d8
+#define LEVELS 0x1f0
+#define ACTORS 0x208
+#define GNAMES 0x17DE3A80
+
+// ===== Player System =====
+#define LOCAL_PLAYERS 0x38
+#define PLAYER_CONTROLLER 0x30
+#define PLAYERCAMERAMANAGER 0x360
+#define LOCAL_PAWN 0x350
+#define PAWN_PRIVATE 0x320
+#define PLAYER_STATE 0x2C8
+#define TEAM_INDEX 0x11c9
+#define PLAYER_ARRAY 0x2C0
+
+// ===== Player Info =====
+#define PLAYERNAME 0xA28
+#define DISPLAY_NAME 0x40
+#define PLATFORM 0x430
+#define RANKED_PROGRESS 0xD0
+#define TIER 0x13B
+#define NAME_PRIVATE 0x18
+
+// ===== Camera & View =====
+#define VIEW_TARGET 0x1234
+#define CAMERA_LOCATION 0x180   
+#define CAMERA_ROTATION 0x190
+#define WORLD_TIME_SECONDS 0x1a0
+#define DEFAULTFOV 0x3AC
+#define BASEFOV 0x370
+
+// ===== Mesh & Bones =====
+#define MESH 0x328
+#define COMPONENT_TO_WORLD 0x1E0
+#define BONE_ARRAY 0x5E8
+#define BONE_ARRAY_CACHE 0x5F8
+#define LAST_SUBMIT_TIME 0x2E8
+#define LAST_SUBMIT_TIME_ON_SCREEN 0x2F0
+
+// ===== Actor Components =====
+#define ROOT_COMPONENT 0x1B0
+#define RELATIVE_LOCATION 0x140
+#define HABANERO_COMPONENT 0x968
+
+// ===== Weapon / World ESP =====
+#define CURRENT_WEAPON 0x990
+#define WEAPON_DATA 0x558
+#define PRIMARY_PICKUP_ITEM_ENTRY 0x370
+#define RARITY 0xA2
+#define ITEMNAME 0x40
+#define bAlreadySearched 0xDFA
+#define PROJECTILE_SPEED 0x212C
+#define PROJECTILE_GRAVITY 0x2130
+
+
+//Triggerbot Offset
+#define TargetedFortPawn 0x18d0
+
+// ===== Engine Functions =====
+#define STATIC_FIND_OBJECT 0x2222AE4
+#define STATIC_LOAD_OBJECT 0x32EBC5C
+#define FNAME_TO_STRING 0x222A58C
+#define PROCESS_EVENT 0x2496684
+#define PROCESS_EVENT_INDEX 0x41
+#define GENGINE 0x17B93638
+
+// ===== FName Decryption =====
+#define COMPARISON_INDEX 0x8
+
+//DEAD CHECK Offset
+#define bIsDying 0x728
+
+// ===== Aimbot / Networking =====
+#define NetConnection 0x520
+
+// ===== Bone IDs (for Aimbot) =====
+#define FN_PELVIS 6
+#define FN_NECK 67
+#define FN_HEAD 110
+
+// World esp offsets 
+#define Levels 0x1f0
+#define Actors 0x208
+#define PrimaryPickupItemEntry 0x370
+#define Itemname 0x40
+#define Rarity 0xA2
+#define bAlreadySearched 0xDD2
