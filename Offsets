@@ -1,6 +1,5 @@
 #pragma once
 
-// ===== Core Engine & World =====
 #define UWORLD 0x17e5c9c8
 #define GAME_INSTANCE 0x250
 #define GAME_STATE 0x1D8
@@ -24,12 +23,13 @@
 #define PLATFORM 0x430
 #define RANKED_PROGRESS 0xD0
 #define TIER 0x13B
+#define NAME_PRIVATE 0x18
 
 // ===== Camera & View =====
 #define VIEW_TARGET 0x1234
-#define CAMERA_LOCATION 0x178
-#define CAMERA_ROTATION 0x188
-#define SECONDS 0x198
+#define CAMERA_LOCATION 0x180   
+#define CAMERA_ROTATION 0x190
+#define WORLD_TIME_SECONDS 0x198
 #define DEFAULTFOV 0x3AC
 #define BASEFOV 0x370
 
@@ -48,22 +48,44 @@
 
 // ===== Weapon / World ESP =====
 #define CURRENT_WEAPON 0x990
-#define WEAPON_DATA 0x578
-#define NAME_PRIVATE 0x18
+#define WEAPON_DATA 0x558
 #define PRIMARY_PICKUP_ITEM_ENTRY 0x370
 #define RARITY 0xA2
 #define ITEMNAME 0x40
 #define bAlreadySearched 0xDFA
+#define PROJECTILE_SPEED 0x212C
+#define PROJECTILE_GRAVITY 0x2130
+
+
+//Triggerbot Offset
+#define TargetedFortPawn 0x18d0
+
+// ===== Engine Functions =====
+#define STATIC_FIND_OBJECT 0x2222AE4
+#define STATIC_LOAD_OBJECT 0x32EBC5C
+#define FNAME_TO_STRING 0x222A58C
+#define PROCESS_EVENT 0x2496684
+#define PROCESS_EVENT_INDEX 0x41
+#define GENGINE 0x17B93638
 
 // ===== FName Decryption =====
 #define COMPARISON_INDEX 0x8
 
+//DEAD CHECK Offset
+#define bIsDying 0x728
+
 // ===== Aimbot / Networking =====
 #define NetConnection 0x520
-#define ProjectileSpeed 0x212C
-#define ProjectileGravity 0x2130
 
 // ===== Bone IDs (for Aimbot) =====
 #define FN_PELVIS 6
 #define FN_NECK 67
 #define FN_HEAD 110
+
+// World esp offsets 
+#define Levels 0x1f0
+#define Actors 0x1A8
+#define PrimaryPickupItemEntry 0x370
+#define Itemname 0x40
+#define Rarity 0xA2
+#define bAlreadySearched 0xDD2
