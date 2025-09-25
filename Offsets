@@ -27,8 +27,8 @@
 
 // ===== Camera & View =====
 #define VIEW_TARGET 0x1234
-#define CAMERA_LOCATION 0x180   
-#define CAMERA_ROTATION 0x190
+#define CAMERA_LOCATION 0x178  
+#define CAMERA_ROTATION 0x188
 #define WORLD_TIME_SECONDS 0x198
 #define DEFAULTFOV 0x3AC
 #define BASEFOV 0x370
