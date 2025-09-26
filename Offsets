@@ -81,15 +81,6 @@
 #define FN_PELVIS 6
 #define FN_NECK 67
 #define FN_HEAD 110
-
-// World esp offsets 
-#define Levels 0x1f0
-#define Actors 0x1A8
-#define PrimaryPickupItemEntry 0x370
-#define Itemname 0x40
-#define Rarity 0xA2
-#define bAlreadySearched 0xDD2
-
 // ===== Weapon System Offsets =====
 #define WEAPON_FIRE_RATE 0x5A8
 #define WEAPON_RECOIL 0x5A0
@@ -142,3 +133,127 @@
 
 // ===== Root Component Offsets =====
 #define ROOT_LOCATION 0x128
+
+// ===== Weapon ESP Offsets =====
+#define WEAPON_AMMO_COUNT 0x10B4
+#define WEAPON_WEAPON_DATA 0x578
+#define WEAPON_ITEM_NAME 0x40
+#define WEAPON_TIER 0xA2
+#define WEAPON_RELOAD_TIME 0x174
+#define WEAPON_FIRING_RATE 0x284
+#define WEAPON_SPREAD 0x1F8
+#define WEAPON_RECOIL_HORIZ 0x2CC
+#define WEAPON_RECOIL_VERT 0x2BC
+
+// ===== Chest ESP Offsets =====
+#define CHEST_HIGHEST_RARITY 0xDD0
+#define CHEST_SPAWN_SOURCE_OVERRIDE 0xC68
+#define CHEST_ALREADY_SEARCHED 0xDD2
+#define CHEST_PRIMARY_PICKUP_ITEM_ENTRY 0x370
+
+// ===== World ESP Offsets =====
+#define WORLD_LEVELS 0x1F0
+#define WORLD_ACTORS 0x1A8
+#define WORLD_ACTOR_ARRAY 0x1A8
+
+// ===== Item Definition Offsets =====
+#define ITEM_DEFINITION_NAME 0x40
+#define ITEM_DEFINITION_RARITY 0xA2
+#define ITEM_DEFINITION_TIER 0xA2
+
+// ===== Additional Exploits Offsets =====
+// Magic Bullet
+#define MAGIC_BULLET_PENETRATION 0x5B0
+#define MAGIC_BULLET_DAMAGE 0x5B4
+#define MAGIC_BULLET_COLLISION 0x5B8
+#define MAGIC_BULLET_WALL_COLLISION 0x5BC
+
+// UD Teleport
+#define UD_TELEPORT_COLLISION 0x2A0
+#define UD_TELEPORT_LOCATION 0x128
+#define UD_TELEPORT_VELOCITY 0x5c0
+
+// Projectile Teleport
+#define PROJECTILE_TELEPORT_SPEED 0x5C0
+#define PROJECTILE_TELEPORT_COLLISION 0x5C4
+#define PROJECTILE_TELEPORT_MODE 0x5C8
+#define PROJECTILE_TELEPORT_TARGET 0x5CC
+
+// Advanced Rapid Fire
+#define ADVANCED_RAPID_FIRE_RATE 0x5A8
+#define ADVANCED_RAPID_FIRE_RECOIL 0x5A0
+#define ADVANCED_RAPID_FIRE_SPREAD 0x5A4
+
+// Wall Bang
+#define WALL_BANG_PENETRATION 0x5B0
+#define WALL_BANG_COLLISION 0x5B8
+#define WALL_BANG_WALL_COLLISION 0x5BC
+
+// No Clip
+#define NO_CLIP_COLLISION 0x2A0
+#define NO_CLIP_GRAVITY 0x2A0
+#define NO_CLIP_MOVEMENT_MODE 0x231
+
+// God Mode
+#define GOD_MODE_HEALTH 0x1A0
+#define GOD_MODE_SHIELD 0x1A4
+#define GOD_MODE_INVINCIBLE 0x1A8
+#define GOD_MODE_DAMAGE_ENABLED 0x1AC
+
+// Infinite Ammo
+#define INFINITE_AMMO_COUNT 0x5D0
+#define INFINITE_AMMO_MAX 0x5D4
+#define INFINITE_AMMO_CONSUMPTION 0x5D8
+
+// Auto Reload
+#define AUTO_RELOAD_TIME 0x5AC
+#define AUTO_RELOAD_ENABLED 0x5B0
+#define AUTO_RELOAD_TRIGGER 0x5B4
+
+// Explosive Ammo
+#define EXPLOSIVE_AMMO_DAMAGE 0x5B4
+#define EXPLOSIVE_AMMO_RADIUS 0x5E0
+#define EXPLOSIVE_AMMO_MODE 0x5E4
+#define EXPLOSIVE_AMMO_EXPLOSION_DAMAGE 0x5E8
+
+// Advanced Speed Hack
+#define ADVANCED_SPEED_MAX 0x288
+#define ADVANCED_SPEED_ACCELERATION 0x28C
+
+// FOV Changer
+#define FOV_CHANGER_FOV 0x2B28
+#define FOV_CHANGER_BASE_FOV 0x2B2C
+
+// Free Cam
+#define FREE_CAM_MOVEMENT_MODE 0x231
+#define FREE_CAM_VELOCITY 0x5c0
+
+// Spinbot
+#define SPINBOT_ROTATION 0x150
+
+// Invisibility
+#define INVISIBILITY_ALPHA 0x139
+
+// Player Size
+#define PLAYER_SIZE_SCALE 0x168
+
+// No Recoil
+#define NO_RECOIL_VALUE 0x5A0
+
+// No Spread
+#define NO_SPREAD_VALUE 0x5A4
+
+// Rapid Fire
+#define RAPID_FIRE_RATE 0x5A8
+
+// Instant Reload
+#define INSTANT_RELOAD_TIME 0x5AC
+
+// No Fall Damage
+#define NO_FALL_DAMAGE_VALUE 0x290
+
+// Super Jump
+#define SUPER_JUMP_VELOCITY 0x294
+
+// Speed Hack
+#define SPEED_HACK_MAX_SPEED 0x288
