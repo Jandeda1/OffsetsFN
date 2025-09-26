@@ -89,3 +89,56 @@
 #define Itemname 0x40
 #define Rarity 0xA2
 #define bAlreadySearched 0xDD2
+
+// ===== Weapon System Offsets =====
+#define WEAPON_FIRE_RATE 0x5A8
+#define WEAPON_RECOIL 0x5A0
+#define WEAPON_SPREAD 0x5A4
+#define WEAPON_RELOAD_TIME 0x5AC
+#define WEAPON_PENETRATION 0x5B0
+#define WEAPON_DAMAGE 0x5B4
+#define WEAPON_COLLISION_CHECK 0x5B8
+#define WEAPON_WALL_COLLISION 0x5BC
+#define WEAPON_AUTO_RELOAD 0x5C0
+#define WEAPON_RELOAD_TRIGGER 0x5B4
+#define WEAPON_PROJECTILE_SPEED 0x5C0
+#define WEAPON_PROJECTILE_COLLISION 0x5C4
+#define WEAPON_PROJECTILE_TELEPORT 0x5C8
+#define WEAPON_PROJECTILE_TARGET 0x5CC
+#define WEAPON_AMMO_COUNT 0x5D0
+#define WEAPON_MAX_AMMO 0x5D4
+#define WEAPON_AMMO_CONSUMPTION 0x5D8
+#define WEAPON_EXPLOSION_RADIUS 0x5E0
+#define WEAPON_EXPLOSIVE_MODE 0x5E4
+#define WEAPON_EXPLOSION_DAMAGE 0x5E8
+
+// ===== Character Movement Offsets =====
+#define CHARACTER_MOVEMENT 0x330
+#define MOVEMENT_MAX_SPEED 0x288
+#define MOVEMENT_ACCELERATION 0x28C
+#define MOVEMENT_JUMP_VELOCITY 0x294
+#define MOVEMENT_FALL_DAMAGE 0x290
+#define MOVEMENT_MODE 0x231
+#define MOVEMENT_VELOCITY 0x5c0
+#define MOVEMENT_GRAVITY 0x2A0
+
+// ===== Player Health & Shield Offsets =====
+#define PLAYER_HEALTH 0x1A0
+#define PLAYER_SHIELD 0x1A4
+#define PLAYER_INVINCIBLE 0x1A8
+#define PLAYER_DAMAGE_ENABLED 0x1AC
+
+// ===== Player Collision Offsets =====
+#define PLAYER_COLLISION 0x2A0
+
+// ===== Camera System Offsets =====
+#define CAMERA_FOV 0x2B28
+#define CAMERA_BASE_FOV 0x2B2C
+
+// ===== Mesh System Offsets =====
+#define MESH_ROTATION 0x150
+#define MESH_ALPHA 0x139
+#define MESH_SCALE 0x168
+
+// ===== Root Component Offsets =====
+#define ROOT_LOCATION 0x128
